@@ -90,6 +90,7 @@ angular.module('ui.bootstrap.modal', ['ui.bootstrap.transition'])
       link: function (scope, element, attrs) {
         element.addClass(attrs.windowClass || '');
         scope.size = attrs.size;
+        scope.modalClass = attrs.modalClass;
 
         // moved from template to fix issue #2280
         element.on('click', function(evt) {
@@ -394,6 +395,7 @@ angular.module('ui.bootstrap.modal', ['ui.bootstrap.transition'])
                 backdrop: modalOptions.backdrop,
                 keyboard: modalOptions.keyboard,
                 backdropClass: modalOptions.backdropClass,
+                modalClass: modalOptions.modalClass,
                 windowClass: modalOptions.windowClass,
                 windowTemplateUrl: modalOptions.windowTemplateUrl,
                 size: modalOptions.size
