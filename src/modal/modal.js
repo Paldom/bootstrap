@@ -263,7 +263,7 @@ angular.module('ui.bootstrap.modal', ['ui.bootstrap.transition'])
         angularDomEl.attr({
           'template-url': modal.windowTemplateUrl,
           'window-class': modal.windowClass,
-          'modal-Class': modal.modalClass,
+          'modal-class': modal.modalClass,
           'size': modal.size,
           'index': openedWindows.length() - 1,
           'animate': 'animate'
