@@ -90,7 +90,7 @@ angular.module('ui.bootstrap.modal', ['ui.bootstrap.transition'])
       link: function (scope, element, attrs) {
         element.addClass(attrs.windowClass || '');
         scope.size = attrs.size;
-        scope.modalClass = attrs.modalClass;
+        scope.modalClass = attrs.modalClass || '';
 
         // moved from template to fix issue #2280
         element.on('click', function(evt) {
@@ -263,6 +263,7 @@ angular.module('ui.bootstrap.modal', ['ui.bootstrap.transition'])
         angularDomEl.attr({
           'template-url': modal.windowTemplateUrl,
           'window-class': modal.windowClass,
+          'modal-Class': modal.modalClass,
           'size': modal.size,
           'index': openedWindows.length() - 1,
           'animate': 'animate'
