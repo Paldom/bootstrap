@@ -519,6 +519,18 @@ describe('$modal', function () {
         expect($document.find('div.modal')).toHaveClass('additional');
       });
     });
+      
+    describe('custom modal classes', function () {
+
+      it('should support additional modal class as string', function () {
+        open({
+          template: '<div>With custom modal class</div>',
+          modalClass: 'additional'
+        });
+
+        expect($document.find('div.modal-content')).toHaveClass('additional');
+      });
+    });
 
     describe('size', function () {
 

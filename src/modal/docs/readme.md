@@ -13,6 +13,7 @@ The `$modal` service has only one method: `open(options)` where available option
 * `keyboard` - indicates whether the dialog should be closable by hitting the ESC key, defaults to true
 * `backdropClass` - additional CSS class(es) to be added to a modal backdrop template
 * `windowClass` - additional CSS class(es) to be added to a modal window template
+* `modalClass` - additional CSS class(es) to be added to a modal-content template
 * `windowTemplateUrl` - a path to a template overriding modal's window template
 * `size` - optional size of modal window. Allowed values: `'sm'` (small) or  `'lg'` (large). Requires Bootstrap 3.1.0 or later
 
